@@ -1,0 +1,93 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background:rgb(255, 255, 255);
+}
+.navbar >div >img{
+    width: 4vw;
+}
+.navbar-logo> a{
+    font-size: 30px;
+    color: #313131;
+    text-decoration: none;
+
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+.navbar-links >li>a{
+    font-weight: 50;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-links {
+    /* background-color: red; */
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-links {
+    position: relative; /* Ensure the navbar is positioned relative */
+}
+
+.navbar-links > li {
+    position: relative; /* Set position to relative to contain the pseudo-element */
+    padding-bottom: 5px; /* Add padding for space */
+    overflow: hidden; /* Ensure the pseudo-element stays within the li */
+}
+
+.navbar-links > li::after {
+    content: ''; /* Pseudo-element for the border */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Start from the left */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width */
+    height: 2px; /* Thickness of the border */
+    background-color: rgb(126, 20, 98); /* Color of the border */
+    transform: translateX(-100%); /* Start off-screen to the left */
+    transition: transform 1s ease; /* Transition for smooth effect */
+}
+
+.navbar-links > li:hover::after {
+    transform: translateX(0); /* Move to visible position on hover */
+}
+.navbar-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-buttons >button{
+    border: #313131 solid 1px;
+    border-radius: 15px;
+    margin: 20px ;
+    padding: 6px 20px;
+}
+
+.navbar-buttons >button>a{
+    text-decoration: none;
+    color: #000;
+}
+.material-symbols-outlined{
+    color: #000;
+}
+.navbar-buttons >button:hover{
+    background: rgb(137, 106, 167);
+    transition: 1s;
+}

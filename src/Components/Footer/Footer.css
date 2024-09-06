@@ -1,0 +1,33 @@
+.shopper>*{
+    margin-bottom: 15px;
+}
+.shopper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.shopper>ul{
+    display: flex;
+    gap: 1em;
+}
+.shopper>ul>li{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.shopper>p{
+    font-size: 11px;
+}
+.shopper .icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.seperator {
+    width: 80vw;
+    height: 1.5px;
+    background-color: rgb(151, 144, 144);
+}

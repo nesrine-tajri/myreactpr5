@@ -1,0 +1,58 @@
+.product{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+}
+.card {
+    cursor: pointer;
+    margin: 2vw;
+    transition: transform 0.5s ease;
+}
+.card:hover {   
+    transform: scale(1.05);
+}
+.card>img{
+    margin-bottom: 1vw;
+}
+
+.card>h2{
+    margin-top: 1vw;
+}
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popular>h1{
+    width: fit-content;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 4vw;
+    word-spacing: 1vw;
+    text-align: center;
+    margin: 5vw;
+    margin-bottom: 1vw;
+    display: inline-block;
+   
+}
+.ligne{
+    background: #000;
+    width: 100px;
+    height: 5px;
+    margin-bottom: 2vw;
+    border-radius: 2px;
+    
+    
+
+}
+.popular>div>div>img{
+    width: 100%;
+    height: 40vw;
+    /* margin: 2vw; */
+    background: #bdadad;
+    border: 2px solid rgba(0, 0, 0, 0.01);
+    border-radius: 2px;
+    
+}

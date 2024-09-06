@@ -1,0 +1,85 @@
+.shop{
+    background:linear-gradient(rgb(238, 144, 227),white);
+     height: 100vh;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     word-spacing: 1vw;
+}
+.shop > img{
+    max-width: 50vw; 
+    height: auto;
+}
+.shop>nav>p{
+    font-style: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 2vw ;
+}
+.hand{
+    display: flex;
+    align-items: center;
+    
+}
+.hand>h1{
+    margin-right: 3vw ;
+}
+.shop>nav>h1,.shop>nav>div>h1,.shop>nav>div>span {
+    font-size: 5vw;
+    margin-bottom: 1.5vw;
+}
+.shop>nav>div>span{
+    color: yellow;
+}
+.shop>nav>button{
+    background: #f00000;
+    color: white;
+    text-transform:capitalize ;
+    margin: 1vw 0;
+    padding: 1.5vw 4vw 1.5vw 1.5vw;
+    font-size: 2vw;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+}
+
+  
+  .arrow-button::after {
+    content: '\2192'; /* Unicode for a right arrow */
+    position: absolute;
+    right: 2px; /* Adjust position */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px; /* Adjust size */
+    transition: right 0.3s ease;
+  }
+  .arrow-button:hover {
+    background-color:#de230e;
+    opacity: 90%;
+    border: #040404 solid 2px;
+    color: #000;
+    padding: 10px 50px 10px 30px; /* Increase padding to make button bigger */
+  }
+  .arrow-button:hover::after {
+    right: 15px; /* Move arrow further to the right on hover */
+  }
+  @media (min-width: 768px) {
+    .arrow-button::after {
+        font-size: 3vw; /* Increase arrow size on larger screens */
+    }
+    .arrow-button:hover{
+        padding: 10px 100px 10px 40px;
+    }
+    .arrow-button:hover::after {
+        right: 8px; /* Move arrow further to the right on hover */
+      }
+      .shop>nav>button{
+        border-radius: 65px;
+      }
+}
+

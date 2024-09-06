@@ -1,0 +1,40 @@
+
+.email {
+    background:linear-gradient(rgba(238, 144, 227, 0.53),white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border-radius: 5px;
+    margin: 10vw auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.email p {
+    margin: 10px;
+    font-size: 13px
+}
+
+.email h1 {
+    font-size: 26px;
+}
+
+.email input {
+    margin: 15px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+}
+
+.email .button button {
+    margin: 15px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    z-index: 9;
+    margin-left: -50px;
+}

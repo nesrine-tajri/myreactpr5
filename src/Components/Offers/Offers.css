@@ -1,0 +1,32 @@
+.offers {
+    background:linear-gradient(rgba(238, 144, 227, 0.53),white);
+    height: 40vh;
+    width: 70%;
+    margin: 20vw auto;
+    border-radius: 3px;
+    position: relative;
+    padding: 2rem;
+}
+
+.offers img {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    /* width: 160px; */
+    height: 160px;
+}
+.offers h1 {
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.offers p {
+    margin: 15px 0;
+}
+
+.offers button {
+    padding: 10px 35px;
+    background-color: rgb(202, 24, 24);
+    border-radius: 20px;
+    border: none;
+}
